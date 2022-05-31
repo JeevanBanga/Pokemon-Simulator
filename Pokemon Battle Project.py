@@ -1,11 +1,11 @@
 import random
-
+# Class has the properties of name (string), attack power (converted to integer later on), and friendliness (boolean)
 class pokemon:
   def __init__(self, name, attack_power, isfriendly = True):
     self.name = name
     self.attack_power = attack_power
     self.isfriendly = isfriendly
-
+# repr used for user to be able to get a description of each Pokemon they define as a menu option later on
   def __repr__(self):
     description = "{self_name} has {attack_power} attack power and is ".format(self_name = self.name, attack_power = self.attack_power)
     if self.isfriendly == True:
@@ -15,7 +15,7 @@ class pokemon:
     else:
       description += "unsure. Check your Pokemon inputs and try again!"
     return description
-
+# this method is used in menu option 3 later on to simulate how each Pokemon will interact. Random.choice is used to have multiple responses for each scenario
   def interact(self, other_pokemon):
     if (other_pokemon.isfriendly == True and self.isfriendly == True):
       # importing random allows us to have as many random, unique interactions between the pokemon as we'd like! The logic will choose out of the list of possible interactions at random.
