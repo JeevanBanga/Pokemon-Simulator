@@ -5,7 +5,7 @@ This is a Pokemon interaction simulator! The user will input 2 pokemon names, th
 3) Simulate the interaction between Pokemon 1 and 2
 4) Quit Game
 
-The 3rd simulation option has over 30 possible unique interactions between the 2 Pokemon depending on if they're friendly with each other and how their attack levels compare with each other!
+The 3rd simulation option has over 30 possible unique interactions between the 2 Pokemon depending on if they're friendly and how their attack levels compare with each other!
 
 # Concepts used
 - relatively complex program that uses multiple class objects that interact with each other.
